@@ -10,6 +10,7 @@
      tools:menu="@tools:sample/us_zipcodes">
 
     <EditText
+        android:id="@+id/search_bar"
         android:layout_width="match_parent"
         android:layout_height="56dp"
         android:hint="@string/app_name"
@@ -24,6 +25,36 @@
         >
 
     </EditText>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="416dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/search_bar"
+
+        >
+
+        <TextView
+            android:layout_width="116dp"
+            android:layout_height="85dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:layout_marginTop="9dp"
+            android:text="Location "
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12°C"
+            android:textColor="@color/white"
+            android:layout_marginTop="25dp"
+            android:layout_gravity="center_horizontal"
+            android:textSize="75dp" />
+
+    </LinearLayout>
+
 
 <!--    <com.google.android.material.card.MaterialCardView-->
 <!--        android:layout_width="match_parent"-->
